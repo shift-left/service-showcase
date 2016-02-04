@@ -12,21 +12,6 @@ describe('Mixer Dossier - ', function() {
     soundbite.resetCookie();
   });
 
-  it('Get dossier with invalid enterprise [C001]', function(done) {
-    soundbite.run(function() {
-      var r = soundbite.mixer.dossier.POST({
-        body: {
-          enterprise: 'dominos2',
-          fulfillment: 'delivery',
-          address: test.Address.dominos.CA_SanRamon
-        }
-      });
-      test.CommonAssertions.checkStatus(r, 200);
-
-      done();
-    });
-  });
-
   it('Get dossier with invalid enterprise [C002]', function(done) {
     soundbite.run(function() {
       var enterprise = 'lazydog';
