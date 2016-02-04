@@ -1,0 +1,37 @@
+{
+  "type": "object",
+  "required": [
+    "deck"
+  ],
+
+  "properties": {
+    "deck": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "logo",
+          "fulfillments"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "logo": {
+            "type": "string"
+          },
+          "fulfillments": {
+            "type": "array"
+          }
+        }
+      },
+      "minItems": 3,
+      "uniqueItems": true
+    }
+  }
+}

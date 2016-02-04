@@ -1,0 +1,26 @@
+{
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "session",
+    "dossier"
+  ],
+
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "sessions": {
+      "type": "object",
+      "required": ["headers", "address", "store"]
+    },
+    "dossier": {
+      "type": "object",
+      "required": ["fulfillments", "images", "promotions"]
+    }
+  }
+}

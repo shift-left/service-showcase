@@ -1,0 +1,76 @@
+{
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "session",
+    "pricing"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "session": {
+      "type": "object",
+      "required": [
+        "headers"
+      ],
+      "properties": {
+        "headers": {
+          "type": "object"
+        },
+        "address": {
+          "type": "object"
+        },
+        "store": {
+          "type": "object"
+        },
+        "serviceMethod": {
+          "type": "string"
+        }
+      }
+    },
+    "pricing": {
+      "type": "object",
+      "required": [
+        "location",
+        "fulfillment",
+        "products",
+        "summary"
+      ],
+      "properties": {
+        "location": {
+          "type": "string"
+        },
+        "fulfillment": {
+          "type": "string"
+        },
+        "products": {
+          "type": "array"
+        },
+        "summary": {
+          "type": "object",
+          "required": [
+            "subTotal",
+            "tax",
+            "total"
+          ],
+          "properties": {
+            "subTotal": {
+              "type": "string"
+            },
+            "tax": {
+              "type": "string"
+            },
+            "total": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}
