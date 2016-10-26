@@ -1,6 +1,0 @@
-{
-  "env": "production",
-  "server": {
-    "host": "https://cravenation.com"
-  }
-}

@@ -1,55 +1,16 @@
 {
-  "soundbite": {
-
-    "user": {
+  "sample": {
+    "get": {
       "schema": "http",
-      "method": ["POST"],
-      "login": {
-        "schema": "http",
-        "method": ["POST"]
-      },
-      "${email}": {
-        "schema": "http",
-        "method": ["POST", "PUT"]
-      }
+      "method": [
+        "GET"
+      ]
     },
-
-    "checkout": {
-      "price": {
-        "schema": "http",
-        "method": ["POST"]
-      },
-      "submit": {
-        "schema": "http",
-        "method": ["POST"]
-      }
-    },
-
-    "mixer": {
-      "deck": {
-        "schema": "http",
-        "method": ["GET"]
-      },
-      "dossier": {
-        "schema": "http",
-        "method": ["POST"]
-      },
-      "email": {
-        "schema": "http",
-        "method": ["POST"]
-      }
-    },
-
-    "heartbeat": {
+    "post": {
       "schema": "http",
-      "method": ["GET"]
-    },
-
-    "tos": {
-      "schema": "http",
-      "method": ["GET"]
+      "method": [
+        "POST"
+      ]
     }
   }
-
 }
-

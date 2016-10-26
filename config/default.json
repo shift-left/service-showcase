@@ -1,6 +1,7 @@
 {
   "env": "production",
+  "proxy": null,
   "server": {
-    "host": "https://cravenation.com"
+    "host": "httpbin.org"
   }
 }
