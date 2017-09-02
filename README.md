@@ -11,7 +11,7 @@ $ npm install
 
 ## Usage ##
 
-* Run directly with [mocha](http://visionmedia.github.io/mocha/) (example):
+* Run directly with [mocha](http://mochajs.org/) (example):
 
 ```bash
 # Run all tests against production
